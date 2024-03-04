@@ -1,12 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import logo from '../assets/images/logo.png';
+import './Navbar.css';
 
 const Navbar = () => {
   return (
-    <nav style={{ backgroundColor: 'black', padding: '10px', color: 'white' }}>
-      <ul style={{ listStyle: 'none', display: 'flex' }}>
-        <li style={{ marginRight: '20px' }}>Home</li>
-        <li style={{ marginRight: '20px' }}>About</li>
-        <li style={{ marginRight: '20px' }}>Contact</li>
+    <nav className="navbar">
+      <img src={logo} alt="Logo" />
+      <ul>
+        <li> <Link to="/home">Home</Link> </li>
+        <li> <Link to="/about">About</Link> </li>
+        <li> <Link to="/contact">Contact</Link> </li>
       </ul>
     </nav>
   );

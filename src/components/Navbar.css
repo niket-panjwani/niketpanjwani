@@ -1,0 +1,29 @@
+.navbar {
+  display: flex;
+  background-color: black;
+  padding: 10px;
+  color: white;
+  height: 50px;
+  width: auto;
+}
+
+.navbar img {
+  height: 50px;
+  width: auto;
+  vertical-align: middle;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  padding-left: 25px;
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
