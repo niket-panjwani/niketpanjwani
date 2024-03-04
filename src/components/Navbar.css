@@ -1,4 +1,6 @@
 .navbar {
+  font-family: 'Source Code Pro Semi Bold', monospace;
+  font-size: large;
   display: flex;
   background-color: black;
   padding: 10px;
