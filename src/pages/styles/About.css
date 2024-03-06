@@ -1,0 +1,11 @@
+.about {
+  font-family: 'Source Code Pro Semi Bold', monospace;
+  background-color: black;
+  color: white;
+  height: 100vh;
+  margin-left: 150px;
+  margin-right: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

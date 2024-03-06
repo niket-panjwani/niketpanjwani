@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import logo from '../assets/images/logo.png';
-import './Navbar.css';
+import './styles/Navbar.css';
 
 const Navbar = () => {
   return (
@@ -10,9 +10,10 @@ const Navbar = () => {
         <img src={logo} alt="Logo" />
       </Link>
       <ul>
-        <li> <Link to="/home">Home</Link> </li>
-        <li> <Link to="/about">About</Link> </li>
-        <li> <Link to="/contact">Contact</Link> </li>
+        <li> <Link to="home" smooth={true} duration={500}>&lt;Home/&gt;</Link> </li>
+        <li> <Link to="about" smooth={true} duration={500}>&lt;About/&gt;</Link> </li>
+        <li> <Link to="contact" smooth={true} duration={500}>&lt;Contact/&gt;</Link> </li>
+        <li> <Link to="contact" smooth={true} duration={500}>&lt;Resume/&gt;</Link></li>
       </ul>
     </nav>
   );

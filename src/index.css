@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Source Code Pro Regular', monospace;
+  background-color: black;
 }
 
 code {
@@ -32,4 +33,11 @@ code {
   font-style: normal;
   font-weight: 700;
   src: local('Source Code Pro Semi Bold'), local('SourceCodePro-SemiBold'), url(../public/fonts/source-code-pro/SourceCodePro-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Code Pro Light';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Code Pro Semi Bold'), local('SourceCodePro-SemiBold'), url(../public/fonts/source-code-pro/SourceCodePro-Light.ttf) format('truetype');
 }
