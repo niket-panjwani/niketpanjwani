@@ -1,2 +1,0 @@
-# niketpanjwani
-Personal Portfolio Website
