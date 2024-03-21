@@ -13,28 +13,31 @@ const About = () => {
       <div className="flex flex-col lgl:flex-row gap-16">
         <div className="w-full lgl:w-2/3 text-base text-textDark font-medium flex flex-col gap-4">
           <p>
-            Hello! My name is Noor Mohammad and I enjoy creating things that
-            live on the internet. My interest in web development started back in
-            2012 when I decided to try editing custom Tumblr themes — turns out
-            hacking together a custom reblog button taught me a lot about HTML &
-            CSS!
+            Welcome to my space! I&apos;m Niket Panjwani, a dedicated Software Engineer fueled by a passion 
+            for crafting digital solutions that thrive online. My journey began in 2012, 
+            sparked by a curiosity in customizing digital platforms, which introduced me 
+            to the foundational elements of building online experiences. This exploration 
+            into customization paved the way for a deeper understanding of the intricacies 
+            involved in creating and modifying digital content.
           </p>
           <p>
-            Fast-forward to today, and I had the privilege of working at an
-            advertising agency, a start-up,{" "}
+            Throughout my career, I&apos;ve had the privilege of contributing my expertise across 
+            a variety of settings, including 
             <span className="text-textGreen">
-              a huge corporation, and a student-led design studio.
+              dynamic agencies, innovative startups, structured 
+              corporate environments, and collaborative design studios.
             </span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio rem
-            accusantium fugiat veritatis, quidem repellat{" "}
-            <span className="text-textGreen">
-              ab natus possimus? Sint, accusamus!
-            </span>
+              These diverse experiences enriched my skill set and broadened my perspective on 
+              how technology can be applied to address complex challenges, drive value, 
+              and enhance user engagement.
           </p>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
-            ullam eligendi dolorum nostrum possimus quos iusto magnam ut esse
-            recusandae.
+            Now, with four years of professional experience, I&apos;ve established a track record 
+            of success in fields such as Generative AI, comprehensive solution development, 
+            and Cloud infrastructure. My strengths lie in designing resilient architectures, 
+            adopting advanced coding practices, and fostering innovation in the technological realm. 
+            I&apos;m proficient in navigating the latest technologies and methodologies to deliver solutions 
+            that are not only robust and efficient but also forward-thinking.
           </p>
           <p>Here are a few technologies I have been working with recently:</p>
           <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-2 gap-2 mt-6">
@@ -42,7 +45,7 @@ const About = () => {
               <span className="text-textGreen">
                 <AiFillThunderbolt />
               </span>
-              JavaScript (ES6+)
+              JavaScript
             </li>
             <li className="flex items-center gap-2">
               <span className="text-textGreen">
@@ -78,7 +81,7 @@ const About = () => {
               <span className="text-textGreen">
                 <AiFillThunderbolt />
               </span>
-              MongoDB
+              Postgres
             </li>
             <li className="flex items-center gap-2">
               <span className="text-textGreen">
@@ -96,7 +99,7 @@ const About = () => {
                 src={profileImg}
                 alt="profileImg"
               />
-              <div className="hidden lgl:inline-block absolute w-full h-80 bg-textGreen/20 rounded-md top-0 left-0 group-hover:bg-transparent duration-300"></div>
+              <div className="hidden lgl:inline-block absolute w-full h-80 rounded-md top-0 left-0 duration-300"></div>
             </div>
           </div>
           <div className="hidden lgl:inline-flex w-full h-80 border-2 border-textGreen rounded-md group-hover:-translate-x-2 group-hover:-translate-y-2 transition-transform duration-300"></div>

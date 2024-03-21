@@ -1,119 +1,27 @@
-import { useState } from "react";
 import SectionTitle from "./SectionTitle";
-import Amazon from "./works/Amazon";
-import Apple from "./works/Apple";
-import Google from "./works/Google";
-import ReactBD from "./works/ReactBD";
-import Splash from "./works/Splash";
+import experiences from './experiences.json';
 
 const Experience = () => {
-  const [workReactbd, setWorkReactbd] = useState(true);
-  const [workGoogle, setWorkGoogle] = useState(false);
-  const [workApple, setWorkApple] = useState(false);
-  const [workSplash, setWorkSplash] = useState(false);
-  const [workAmazon, setWorkAmazon] = useState(false);
-
-  const handleReactbd = () => {
-    setWorkReactbd(true);
-    setWorkGoogle(false);
-    setWorkApple(false);
-    setWorkSplash(false);
-    setWorkAmazon(false);
-  };
-
-  const handleGoogle = () => {
-    setWorkReactbd(false);
-    setWorkGoogle(true);
-    setWorkApple(false);
-    setWorkSplash(false);
-    setWorkAmazon(false);
-  };
-
-  const handleApple = () => {
-    setWorkReactbd(false);
-    setWorkGoogle(false);
-    setWorkApple(true);
-    setWorkSplash(false);
-    setWorkAmazon(false);
-  };
-  const handleSplash = () => {
-    setWorkReactbd(false);
-    setWorkGoogle(false);
-    setWorkApple(false);
-    setWorkSplash(true);
-    setWorkAmazon(false);
-  };
-  const handleAmazon = () => {
-    setWorkReactbd(false);
-    setWorkGoogle(false);
-    setWorkApple(false);
-    setWorkSplash(false);
-    setWorkAmazon(true);
-  };
   return (
-    <section
-      id="experience"
-      className="max-w-containerxs mx-auto py-10 lgl:py-24 px-4"
-    >
-      <SectionTitle title="Where I have Worked" titleNo="02" />
-      <div className="w-full mt-10 flex flex-col md:flex-row gap-16">
-        <ul className="md:w-32 flex flex-col">
-          <li
-            onClick={handleReactbd}
-            className={`${
-              workReactbd
-                ? "border-l-textGreen text-textGreen"
-                : "border-l-hoverColor text-textDark"
-            } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm  cursor-pointer duration-300 px-8 font-medium`}
-          >
-            RactBD
-          </li>
-          <li
-            onClick={handleGoogle}
-            className={`${
-              workGoogle
-                ? "border-l-textGreen text-textGreen"
-                : "border-l-hoverColor text-textDark"
-            } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm  cursor-pointer duration-300 px-8 font-medium`}
-          >
-            Google
-          </li>
-          <li
-            onClick={handleApple}
-            className={`${
-              workApple
-                ? "border-l-textGreen text-textGreen"
-                : "border-l-hoverColor text-textDark"
-            } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm  cursor-pointer duration-300 px-8 font-medium`}
-          >
-            Apple
-          </li>
-          <li
-            onClick={handleSplash}
-            className={`${
-              workSplash
-                ? "border-l-textGreen text-textGreen"
-                : "border-l-hoverColor text-textDark"
-            } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm  cursor-pointer duration-300 px-8 font-medium`}
-          >
-            Splash
-          </li>
-          <li
-            onClick={handleAmazon}
-            className={`${
-              workAmazon
-                ? "border-l-textGreen text-textGreen"
-                : "border-l-hoverColor text-textDark"
-            } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm  cursor-pointer duration-300 px-8 font-medium`}
-          >
-            Amazon
-          </li>
-        </ul>
-        {workReactbd && <ReactBD />}
-        {workGoogle && <Google />}
-        {workApple && <Apple />}
-        {workSplash && <Splash />}
-        {workAmazon && <Amazon />}
+    <section id="experience" className="max-w-6xl mx-auto lgl:px-24 pt-24 pb-30">
+      {/* Section Title aligned to the top-left */}
+      <SectionTitle title="My Journey So Far..." titleNo="02" />
+
+      <div className="flex flex-col items-center relative">
+        {/* Central line */}
+        <div className="absolute inset-0 flex justify-center">
+          <div className="w-0.5 bg-gray-200"></div> {/* Central vertical line */}
+        </div>
+
+        {experiences.map((experience, index) => (
+          <div key={index} className={`flex w-full ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
+            <div className={`w-6/12 px-4 py-2 ${index % 2 === 0 ? 'text-right mr-2' : 'text-left ml-2'}`}>
+              <div className="text-xl font-semibold">{experience.title}</div>
+              <div className="text-sm text-base text-textDark">{experience.date}</div>
+              <p className="mt-2 text-base text-textDark">{experience.description}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );
