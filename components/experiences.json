@@ -1,0 +1,27 @@
+[
+  {
+    "date": "Jul 2022",
+    "title": "Mckinsey & Company",
+    "description": "As a Software Engineer Consultant at McKinsey, I developed and implemented versatile tech solutions for clients across various industries, highlighting my adaptability. I led Generation AI initiatives, working with a diverse client base to facilitate the early adoption of Gen AI tools. This effort boosted developer efficiency by 50%. Additionally, I coached both client and McKinsey developers in effective Gen AI tool use, achieving a 40% week-on-week increase in adoption rates."
+  },
+  {
+    "date": "May 2022",
+    "title": "Purdue University",
+    "description": "Graduated from Purdue University with a Bachelor's degree in Computer & Information Technology."
+  },
+  {
+    "date": "May 2021 - Jul 2021",
+    "title": "Pantsuit Professionals",
+    "description": "As an SDE Intern at Pantsuit Professional, I designed and engineered a client-side user login and registration module for an Android application using the MVC framework, improving code efficiency and maintainability. Working closely with UI/UX designers, Android engineers, and the business team, I gained a deep understanding of application requirements. Additionally, I conducted code reviews for fellow interns' projects, offering constructive feedback to ensure best coding practices and project requirements were met, fostering a collaborative learning environment within the team."
+  },
+  {
+    "date": "May 2020 - Jul 2020",
+    "title": "Deloitte",
+    "description": "As an Emerging Tech Intern at Deloitte, I played a crucial role in our technical consultancy team. My tasks included data analysis to inform solution development, researching emerging technologies to spot innovation opportunities, and contributing to detailed project proposals. This work involved clear client communication regarding time estimates, cost projections, and services, ensuring we provided strategic tech consulting to drive client growth and innovation."
+  },
+  {
+    "date": "Aug 2018",
+    "title": "Purdue University",
+    "description": "Started my undergraduate degree in Computer & Information Technoloy at Purdue University in West Lafayette, IN."
+  }
+]
